@@ -7,22 +7,20 @@ int main()
     int n;
     cin >> n;
 
-    int sp = 1;
-
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        int start = 1;
+        if (i % 2)
+            start = 0;
+
+        for (int j = 0; j <= i; j++)
         {
-            cout << sp;
-            
-            if (sp == 1)
+            cout << start;
+            if (j < i)
             {
-                sp = 0;
+                cout << " ";
             }
-            else
-            {
-                sp = 1;
-            }
+            start = !start;
         }
         cout << endl;
     }
