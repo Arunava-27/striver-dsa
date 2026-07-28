@@ -12,9 +12,9 @@
 // value of N. Let's say for N = 5, the pattern should look like as below:
 
 // *****
-// * *
-// * *
-// * *
+// *   *
+// *   *
+// *   *
 // *****
 
 public class pattern_21 {
